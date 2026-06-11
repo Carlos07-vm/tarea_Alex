@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practica de gitHub </title>
+    <title>TechShop - Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>Hola mundo</h1>
-    <p>Esta es una practica de gitHub</p>
-
-    <footer>ale merlo</footer>
+    <header>
+        <div class="logo">TechShop <span class="badge">2026</span></div>
+        <nav>
+            <button id="ver-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</button>
+        </nav>
+    </header>
+    <main>
+        <section id="catalogo">
+            <h2>Nuestros Productos</h2>
+            <div id="contenedor-productos" class="grid-productos"></div>
+        </section>
+        <aside id="carrito-seccion" class="oculto">
+            <h2>Tu Carrito</h2>
+            <div id="items-carrito"></div>
+            <div class="total-compra">Total: $<span id="total-precio">0.00</span></div>
+            <button id="procesar-pago" class="btn-comprar">Proceder al Pago</button>
+        </aside>
+    </main>
+    <script src="producto.js"></script>
+    <script src="java.js"></script>
 </body>
 </html>
